@@ -9,30 +9,40 @@ body:
       label: Problem Description
       description: Describe the issue in detail.
       placeholder: Please provide a clear and concise description of the problem.
+    validations:
+      required: true # Making this field mandatory for better reporting
+
   - type: input
     id: affected-system
     attributes:
       label: Affected System(s)
       description: Which system, device, or software is affected?
       placeholder: e.g., Laptop, Printer, Outlook
+    validations:
+      required: true # Making this field mandatory
+
   - type: textarea
     id: steps
     attributes:
       label: Steps to Reproduce
       description: If applicable, describe how to reproduce the problem.
       placeholder: 1. Open the app 2. Click "Login" 3. Error appears
+
   - type: dropdown
-    id: urgency
+    id: priority
     attributes:
-      label: Urgency
-      description: How urgent is the problem?
+      label: Priority Level
+      description: How critical is this problem?
       options:
-        - Low
-        - Medium
-        - High
+        - Priority: High
+        - Priority: Medium
+        - Priority: Low
+    validations:
+      required: true # Making priority selection mandatory
+
   - type: textarea
     id: additional
     attributes:
       label: Additional Information
       description: Add any other context, error messages, or screenshots.
-      placeholder: e.g., Screenshot, error code, recent changes
+      placeholder: e.g., Screenshot of the error, specific error code, recent changes made to the system
