@@ -1,3 +1,4 @@
+---
 name: IT Problem Report
 description: Report an IT issue or problem
 title: "[IT Problem]: "
@@ -10,7 +11,7 @@ body:
       description: Describe the issue in detail.
       placeholder: Please provide a clear and concise description of the problem.
     validations:
-      required: true # Making this field mandatory for better reporting
+      required: true
 
   - type: input
     id: affected-system
@@ -19,7 +20,7 @@ body:
       description: Which system, device, or software is affected?
       placeholder: e.g., Laptop, Printer, Outlook
     validations:
-      required: true # Making this field mandatory
+      required: true
 
   - type: textarea
     id: steps
@@ -34,11 +35,11 @@ body:
       label: Priority Level
       description: How critical is this problem?
       options:
-        - Priority: High
-        - Priority: Medium
-        - Priority: Low
+        - High
+        - Medium
+        - Low
     validations:
-      required: true # Making priority selection mandatory
+      required: true
 
   - type: textarea
     id: additional
@@ -46,3 +47,4 @@ body:
       label: Additional Information
       description: Add any other context, error messages, or screenshots.
       placeholder: e.g., Screenshot of the error, specific error code, recent changes made to the system
+---
