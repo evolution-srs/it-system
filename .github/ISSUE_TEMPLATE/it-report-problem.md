@@ -37,6 +37,7 @@ If applicable, add screenshots to help explain your problem.
 **Additional context**
 Add any other context about the problem here.
 
-**Problem Solution (please add the steps which resolved the problem ):
+**Problem Solution (please add the steps which resolved the problem ):**  
+
 1. 
 2. 
